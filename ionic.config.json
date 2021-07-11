@@ -1,0 +1,8 @@
+{
+  "name": "U-Vision",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "ec992234"
+}
