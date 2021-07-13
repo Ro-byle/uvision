@@ -103,7 +103,7 @@ ion-button{
   line-height: 28px;
   color: #000000;
   position:relative;
-  left: 100px;
+  left: 50px;
   top:50px;
 }
 #followers{
@@ -116,13 +116,15 @@ ion-button{
   line-height: 28px;
   color: #000000;
   position:relative;
-  left: 210px;
-  bottom:1.5px;
+  left: 150px;
+  // bottom:1.5px;
 }
 #profile{
-  position: relative;
+  // position: relative;
+  float:left;
   width: 75px;
   height: 117px;
-  top:7px;
   border-radius: 37.5px;
+  margin-left: 15px;
+  margin-top: -20px;
 }
