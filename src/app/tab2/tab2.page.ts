@@ -13,10 +13,12 @@ appear(){
   if(this.hidden == "a")
   {
   document.getElementById("popup").style.visibility = "visible";
+   this.hidden = "b"
   }
   else
   {
     document.getElementById("popup").style.visibility = "hidden";
+    this.hidden = "a"
   }
  }
 }
