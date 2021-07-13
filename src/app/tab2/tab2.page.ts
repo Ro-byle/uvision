@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
 export class Tab2Page {
 
   constructor() {}
-
+hidden: String = "a";
+appear(){
+  if(this.hidden == "a")
+  {
+  document.getElementById("popup").style.visibility = "visible";
+  }
+  else
+  {
+    document.getElementById("popup").style.visibility = "hidden";
+  }
+ }
 }
