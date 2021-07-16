@@ -6,11 +6,12 @@
     </ion-toolbar>
   </ion-header>
   <h1 id = "title"> Athletes </h1>
-  <ion-card id = "search">
-  </ion-card>
+ 
+  <ion-searchbar id = "searchbar"></ion-searchbar>
+ <ion-icon id= "list" (click) = "appear();" name="list-sharp"></ion-icon>
+ 
   
-  <ion-icon id= "list" (click) = "appear();" name="list-sharp"></ion-icon>
-  
+
   <ion-card id = "popup">
   <ion-button id = "football" expand="block">Football</ion-button>
   <ion-button id = "basketball" expand="block">Basketball</ion-button>
