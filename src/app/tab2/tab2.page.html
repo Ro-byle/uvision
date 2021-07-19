@@ -19,7 +19,7 @@
     <ion-button id="more" expand="block">More</ion-button>
   </ion-card>
 
-  <ion-card id="player" *ngFor=" let player of players | filter:searchText">
+  <ion-card id="player" *ngFor=" let player of players | filter:searchText" (click) = "go()" >
     <ion-card-title id="playerName"> {{ player.name }}</ion-card-title>
     <img id = "profile" [src] = "player.image" />
     <ion-card-subtitle id="likes"> Likes: {{ player.likes }} </ion-card-subtitle>

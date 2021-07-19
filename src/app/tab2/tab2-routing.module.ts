@@ -4,9 +4,10 @@ import { Tab2Page } from './tab2.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', 
     component: Tab2Page,
   }
+  
 ];
 
 @NgModule({
