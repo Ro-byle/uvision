@@ -8,9 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { TestComponentComponent } from './test-component/test-component.component';
+import { ProfilepageComponent } from './profilepage/profilepage.component';
 
 @NgModule({
-  declarations: [AppComponent, PostsComponent, TestComponentComponent],
+  declarations: [AppComponent, PostsComponent, TestComponentComponent, ProfilepageComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
