@@ -19,22 +19,22 @@ export class Tab2Page {
     },
     {
       name: 'Roman',
-      likes: '100',
-      followers: '50',
+      likes: '80',
+      followers: '30',
       image:
         'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
     },
     {
       name: 'Bryan',
-      likes: '100',
-      followers: '50',
+      likes: '40',
+      followers: '20',
       image:
         'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
     },
     {
       name: 'Jesse',
-      likes: '100',
-      followers: '50',
+      likes: '20',
+      followers: '10',
       image:
         'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
     }
