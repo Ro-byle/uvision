@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ProfilepageComponent } from './profilepage/profilepage.component';
 const routes: Routes = [
   {
     path: '', 
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'profilepage', loadChildren: './profilepage/profilepage.component#ProfilepagePageComponent'
-  }
+    path: 'profilepage',
+    component: ProfilepageComponent
+  },
 ];
 @NgModule({
   imports: [

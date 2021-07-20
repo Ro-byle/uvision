@@ -1,3 +1,24 @@
-<p>
-profilepage works!
-</p>
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <img id = "banner" src ="https://i.imgur.com/tvmk03W.png"
+  />
+  <img id = "profile" src ="https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png"
+  />
+<p id = "numberposts"> 0 </p>
+<p id = "numberfollowers"> 5 </p>
+<p id = "numberfollowing"> 5 </p>
+<p id = "posts"> posts </p>
+<p id = "followers"> followers </p>
+<p id = "following"> following </p>
+<ion-button id = "stats" color = "#7D82B8" expand="block" (click) = "stats();">Stats</ion-button>
+<p id = "username"> username </p>
+<p id = "bio"> bio </p>
+<img id = "statsPicture" src ="https://i.imgur.com/JhHnZkH.png" (click) = "change();"
+  />
