@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class Tab2Page {
   constructor(private router: Router) {}
   go(){
-    this.router.navigate(['profilePage']);
+    this.router.navigate(['profilepage']);
   }
   searchText;
   players = [
