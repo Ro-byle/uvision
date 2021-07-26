@@ -4,15 +4,17 @@ import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
+//Imports for camera feature
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { File, FileEntry } from '@ionic-native/file/ngx';
-// import { File, FileEntry } from '@ionic-native/File/ngx';
+
 import {
   Camera,
   CameraOptions,
   PictureSourceType
 } from '@ionic-native/camera/ngx';
 import { FilePath } from '@ionic-native/file-path/ngx';
+// End of imports for camera
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
