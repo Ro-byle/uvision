@@ -4,6 +4,9 @@ import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 //Imports for camera feature
 import { WebView } from '@ionic-native/ionic-webview/ngx';
 import { File, FileEntry } from '@ionic-native/file/ngx';
@@ -16,6 +19,8 @@ import {
 import { FilePath } from '@ionic-native/file-path/ngx';
 // End of imports for camera
 
+import { IonicStorageModule } from '@ionic/storage';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
@@ -24,7 +29,7 @@ import { ProfilepageComponent } from './profilepage/profilepage.component';
 @NgModule({
   declarations: [AppComponent, PostsComponent, ProfilepageComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,  HttpClientModule, IonicStorageModule.forRoot()],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     WebView,
