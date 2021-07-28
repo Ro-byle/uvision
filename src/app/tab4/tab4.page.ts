@@ -1,169 +1,92 @@
 import { Component } from '@angular/core';
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { Camera, CameraOptions, PictureSourceType } from '@ionic-native/camera/ngx';
-import { ActionSheetController, ToastController, Platform, LoadingController } from '@ionic/angular';
-import { File, FileEntry } from '@ionic-native/file/ngx';
-import { HttpClient } from '@angular/common/http';
-import { WebView } from '@ionic-native/ionic-webview/ngx';
-import { Storage } from '@ionic/storage';
-import { FilePath } from '@ionic-native/file-path/ngx';
-import { finalize } from 'rxjs/operators';
- 
-const STORAGE_KEY = 'my_images';
+import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
+import { AngularFireStorage } from "@angular/fire/storage"
+import { AlertController } from '@ionic/angular';
+import { map, finalize } from "rxjs/operators";
+import { Observable } from "rxjs";
+
 @Component({
   selector: 'app-tab4',
   templateUrl: 'tab4.page.html',
   styleUrls: ['tab4.page.scss']
 })
-export class Tab4Page implements OnInit{
-  images = [];
- 
-  constructor(private camera: Camera, private file: File, private http: HttpClient, private webview: WebView,
-    private actionSheetController: ActionSheetController, private toastController: ToastController,
-    private storage: Storage, private plt: Platform, private loadingController: LoadingController,
-    private ref: ChangeDetectorRef, private filePath: FilePath) { }
- 
-  ngOnInit() {
-    this.plt.ready().then(() => {
-      this.loadStoredImages();
-    });
-  }
- 
-  loadStoredImages() {
-    this.storage.get(STORAGE_KEY).then(images => {
-      if (images) {
-        let arr = JSON.parse(images);
-        this.images = [];
-        for (let img of arr) {
-          let filePath = this.file.dataDirectory + img;
-          let resPath = this.pathForImage(filePath);
-          this.images.push({ name: img, path: resPath, filePath: filePath });
-        }
-      }
-    });
-  }
- 
-  pathForImage(img) {
-    if (img === null) {
-      return '';
-    } else {
-      let converted = this.webview.convertFileSrc(img);
-      return converted;
-    }
-  }
- 
-  async presentToast(text) {
-    const toast = await this.toastController.create({
-        message: text,
-        position: 'bottom',
-        duration: 3000
-    });
-    toast.present();
-  }
- 
-  // Next functions follow here...
-  async selectImage() {
-    const actionSheet = await this.actionSheetController.create({
-        header: "Select Image source",
-        buttons: [{
-                text: 'Load from Library',
-                handler: () => {
-                    this.takePicture(this.camera.PictureSourceType.PHOTOLIBRARY);
-                }
-            },
-            {
-                text: 'Use Camera',
-                handler: () => {
-                    this.takePicture(this.camera.PictureSourceType.CAMERA);
-                }
-            },
-            {
-                text: 'Cancel',
-                role: 'cancel'
-            }
-        ]
-    });
-    await actionSheet.present();
-}
- 
-takePicture(sourceType: PictureSourceType) {
-    var options: CameraOptions = {
-        quality: 100,
-        sourceType: sourceType,
-        saveToPhotoAlbum: false,
-        correctOrientation: true
+export class Tab4Page{
+  base64Image: string;
+  selectedFile: File = null;
+  downloadURL: Observable<string>;
+
+  constructor(private camera: Camera,
+    private alertCtrl: AlertController,
+    private storage: AngularFireStorage) { }
+
+  async takePhoto(sourceType: number) {
+    const options: CameraOptions = {
+      quality: 100,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.JPEG,
+      mediaType: this.camera.MediaType.PICTURE,
+      sourceType
     };
- 
-    this.camera.getPicture(options).then(imagePath => {
-        if (this.platform.is('android') && sourceType === this.camera.PictureSourceType.PHOTOLIBRARY) {
-            this.filePath.resolveNativePath(imagePath)
-                .then(filePath => {
-                    let correctPath = filePath.substr(0, filePath.lastIndexOf('/') + 1);
-                    let currentName = imagePath.substring(imagePath.lastIndexOf('/') + 1, imagePath.lastIndexOf('?'));
-                    this.copyFileToLocalDir(correctPath, currentName, this.createFileName());
-                });
-        } else {
-            var currentName = imagePath.substr(imagePath.lastIndexOf('/') + 1);
-            var correctPath = imagePath.substr(0, imagePath.lastIndexOf('/') + 1);
-            this.copyFileToLocalDir(correctPath, currentName, this.createFileName());
-        }
+
+    this.camera.getPicture(options).then((imageData) => {
+      // imageData is either a base64 encoded string or a file URI
+      this.base64Image = 'data:image/jpeg;base64,' + imageData;
+    }, (err) => {
+      // Handle error
+      console.error(err);
     });
- 
-}
-createFileName() {
-  var d = new Date(),
-      n = d.getTime(),
-      newFileName = n + ".jpg";
-  return newFileName;
-}
+  }
 
-copyFileToLocalDir(namePath, currentName, newFileName) {
-  this.file.copyFile(namePath, currentName, this.file.dataDirectory, newFileName).then(success => {
-      this.updateStoredImages(newFileName);
-  }, error => {
-      this.presentToast('Error while storing file.');
-  });
-}
+  upload(): void {
+    var currentDate = Date.now();
+    const file: any = this.base64ToImage(this.base64Image);
+    const filePath = `Images/${currentDate}`;
+    const fileRef = this.storage.ref(filePath);
 
-updateStoredImages(name) {
-  this.storage.get(STORAGE_KEY).then(images => {
-      let arr = JSON.parse(images);
-      if (!arr) {
-          let newImages = [name];
-          this.storage.set(STORAGE_KEY, JSON.stringify(newImages));
-      } else {
-          arr.push(name);
-          this.storage.set(STORAGE_KEY, JSON.stringify(arr));
-      }
-
-      let filePath = this.file.dataDirectory + name;
-      let resPath = this.pathForImage(filePath);
-
-      let newEntry = {
-          name: name,
-          path: resPath,
-          filePath: filePath
-      };
-
-      this.images = [newEntry, ...this.images];
-      this.ref.detectChanges(); // trigger change detection cycle
-  });
-}
-deleteImage(imgEntry, position) {
-  this.images.splice(position, 1);
-
-  this.storage.get(STORAGE_KEY).then(images => {
-      let arr = JSON.parse(images);
-      let filtered = arr.filter(name => name != imgEntry.name);
-      this.storage.set(STORAGE_KEY, JSON.stringify(filtered));
-
-      var correctPath = imgEntry.filePath.substr(0, imgEntry.filePath.lastIndexOf('/') + 1);
-
-      this.file.removeFile(correctPath, imgEntry.name).then(res => {
-          this.presentToast('File removed.');
+    const task = this.storage.upload(`Images/${currentDate}`, file);
+    task.snapshotChanges()
+      .pipe(finalize(() => {
+        this.downloadURL = fileRef.getDownloadURL();
+        this.downloadURL.subscribe(downloadURL => {
+          if (downloadURL) {
+            this.showSuccesfulUploadAlert();
+          }
+          console.log(downloadURL);
+        });
+      })
+      )
+      .subscribe(url => {
+        if (url) {
+          console.log(url);
+        }
       });
-  });
-}
+  }
+
+  async showSuccesfulUploadAlert() {
+    const alert = await this.alertCtrl.create({
+      cssClass: 'basic-alert',
+      header: 'Uploaded',
+      subHeader: 'Image uploaded successful to Firebase storage',
+      message: 'Check Firebase storage.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
+  base64ToImage(dataURI) {
+    const fileDate = dataURI.split(',');
+    // const mime = fileDate[0].match(/:(.*?);/)[1];
+    const byteString = atob(fileDate[1]);
+    const arrayBuffer = new ArrayBuffer(byteString.length);
+    const int8Array = new Uint8Array(arrayBuffer);
+    for (let i = 0; i < byteString.length; i++) {
+      int8Array[i] = byteString.charCodeAt(i);
+    }
+    const blob = new Blob([arrayBuffer], { type: 'image/png' });
+    return blob;
+  }
+
 }
 
 

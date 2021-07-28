@@ -1,25 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { Camera } from '@ionic-native/camera/ngx';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
 
-import { HttpClientModule } from '@angular/common/http';
-
-
-//Imports for camera feature
-import { WebView } from '@ionic-native/ionic-webview/ngx';
-import { File, FileEntry } from '@ionic-native/file/ngx';
-
-import {
-  Camera,
-  CameraOptions,
-  PictureSourceType
-} from '@ionic-native/camera/ngx';
-import { FilePath } from '@ionic-native/file-path/ngx';
-// End of imports for camera
-
-import { IonicStorageModule } from '@ionic/storage';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,13 +17,10 @@ import { ProfilepageComponent } from './profilepage/profilepage.component';
 @NgModule({
   declarations: [AppComponent, PostsComponent, ProfilepageComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,  HttpClientModule, IonicStorageModule.forRoot()],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,  AngularFireModule.initializeApp(environment.firebaseConfig),],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    WebView,
-    Camera,
-    File,
-    FilePath
+    Camera
   ],
   bootstrap: [AppComponent]
 })
