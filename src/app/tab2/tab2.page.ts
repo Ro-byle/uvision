@@ -18,39 +18,41 @@ export class Tab2Page {
       likes: '100',
       followers: '50',
       image:
-        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
+        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png',
+      Sport: 'basketball'
     },
     {
       name: 'Roman',
       likes: '80',
       followers: '30',
       image:
-        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
+        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png',
+        Sport: 'baseball'
     },
     {
       name: 'Bryan',
       likes: '40',
       followers: '20',
       image:
-        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
+        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png',
+        Sport: 'soccer'
     },
     {
       name: 'Jesse',
       likes: '20',
       followers: '10',
       image:
-        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png'
+        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png',
+        Sport: 'football'
     }
   ];
 
-  hidden: String = 'a';
-  appear() {
-    if (this.hidden == 'a') {
-      document.getElementById('popup').style.visibility = 'visible';
-      this.hidden = 'b';
-    } else {
-      document.getElementById('popup').style.visibility = 'hidden';
-      this.hidden = 'a';
-    }
-  }
+  Sports = [
+  {sport:'basketball', icon:'basketball-outline'},
+   {sport:'football', icon:'american-football-outline'}, 
+   {sport:'soccer', icon: 'football-outline'}, 
+   {sport:'baseball', icon: 'baseball-outline'}, 
+   {sport:'volleyball', icon: 'baseball-outline'},
+];
+
 }

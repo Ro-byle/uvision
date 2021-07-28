@@ -13,31 +13,74 @@ ion-content{
 }
 #search{
   --ion-background-color: white;
-  position: absolute;
+  position: relative;
   width: 361px;
   height: 48px;
-  top: 122px;
+  top: -300px;
   background: #FFFFFF;
   border: 5px solid #000000;
   box-sizing: border-box;
 }
-#list{
-  position: absolute;
-  width: 36px;
-  height: 30px;
-  left: 20px;
-  top: 140px;
-}
-#popup{
-  visibility: hidden;
-  width: 187px;
-  height: 272px;
-  background: #FFDA87;
+
+#popupB{
+  width: 97px;
+  height: 84px;
   position:relative;
-  top:80px;
+  top:120px;
   left:5px;
   z-index: 1;
+  background: #FFFFFF;
+  border-radius: 8px;
+  
 }
+#popupF{
+  width: 97px;
+  height: 84px;
+  position:relative;
+  top:26px;
+  left:120px;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+#popupS{
+  width: 97px;
+  height: 84px;
+  position:relative;
+  top:-68.5px;
+  left:236px;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+#popupBase{
+  width: 97px;
+  height: 84px;
+  position:relative;
+  top: -163px;
+  left:352px;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+#popupV{
+  width: 97px;
+  height: 84px;
+  position:relative;
+  top:-258px;
+  left:465px;
+  z-index: 1;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+#bask{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 20px;
+}
+
 ion-button{
   width: 187px;
   height: 38px;
@@ -47,49 +90,26 @@ ion-button{
   position:relative;
   right:2px;
 }
-#football{
-  position:relative;
-  top:9px;
-}
-#basketball{
-  position:relative;
-  top:18px;
-}
-#soccer{
-  position:relative;
-  top:27px;
-}
-#baseball{
-  position:relative;
-  top:36px;
-}
-#more{
-  position:relative;
-  top:45px;
-}
 
 #player{
   position: relative;
-  width: 356px;
-  height: 135px;
-  top: -160px;
-  right: 0px;
-  background: #FFDA87;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
+  width: 163px;
+  height: 199px;
+  left: 24px;
+  top: -150;
+  background: #C4C4C4;
+  border-radius: 10px;
 }
 #playerName{
   position: relative;
   width: 189px;
   height: 30px;
-  left: 150px;
-  top: 20px;
+  left: 0px;
+  top: 170px;
   font-family: Arial;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
   color: #231F20;
 }
@@ -121,12 +141,8 @@ ion-button{
 }
 #profile{
   // position: relative;
-  float:left;
-  width: 75px;
-  height: 117px;
-  border-radius: 37.5px;
-  margin-left: 15px;
-  margin-top: -20px;
+  width: fit-content;
+  height: fit-content;
 }
 #searchbar
 {
@@ -134,4 +150,29 @@ ion-button{
   position: absolute;
   top: 122px;
 }
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
 
+  .card {
+    display: inline-block;
+  }
+}
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+.scrolling-wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+  }
+}

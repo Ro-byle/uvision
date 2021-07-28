@@ -7,23 +7,30 @@
   <h1 id="title"> Athletes </h1>
 
   <ion-searchbar id="searchbar" [(ngModel)]="searchText"></ion-searchbar>
-  <ion-icon id="list" (click)="appear();" name="list-sharp"></ion-icon>
+  <div class="scrolling-wrapper">   
+     <ion-card id="popupB">
+    <ion-icon id = "bask" name="basketball-outline"></ion-icon>
+    </ion-card>
 
+    <ion-card id="popupF">
+    <ion-icon id = "bask" name="american-football-outline"></ion-icon>
+    </ion-card>
 
+    <ion-card id="popupS">
+    <ion-icon id = "bask" name="football-outline"></ion-icon>
+    </ion-card>
 
-  <ion-card id="popup">
-    <ion-button id="football" expand="block">Football</ion-button>
-    <ion-button id="basketball" expand="block">Basketball</ion-button>
-    <ion-button id="soccer" expand="block">Soccer</ion-button>
-    <ion-button id="baseball" expand="block">Baseball</ion-button>
-    <ion-button id="more" expand="block">More</ion-button>
-  </ion-card>
+    <ion-card id="popupBase">
+    <ion-icon id = "bask" name="baseball-outline"></ion-icon>
+    </ion-card>
 
+    <ion-card id="popupV">
+    </ion-card>
+  </div>
   <ion-card id="player" *ngFor=" let player of players | filter:searchText" (click) = "go()" >
     <ion-card-title id="playerName"> {{ player.name }}</ion-card-title>
     <img id = "profile" [src] = "player.image" />
-    <ion-card-subtitle id="likes"> Likes: {{ player.likes }} </ion-card-subtitle>
-    <ion-card-subtitle id="followers"> Followers: {{ player.followers }}</ion-card-subtitle>
+
   </ion-card>
 
 
