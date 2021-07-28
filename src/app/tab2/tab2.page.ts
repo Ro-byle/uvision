@@ -47,12 +47,12 @@ export class Tab2Page {
     }
   ];
 
-  Sports = [
+  sports = [
   {sport:'basketball', icon:'basketball-outline'},
    {sport:'football', icon:'american-football-outline'}, 
    {sport:'soccer', icon: 'football-outline'}, 
    {sport:'baseball', icon: 'baseball-outline'}, 
-   {sport:'volleyball', icon: 'baseball-outline'},
+   {sport:'volleyball', icon: 'baseball-outline'}
 ];
 
 }
