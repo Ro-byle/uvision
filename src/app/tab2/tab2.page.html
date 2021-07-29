@@ -4,37 +4,43 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
-  
-  
+
+
   <h1 id="title"> Athletes </h1>
 
   <ion-searchbar id="searchbar" [(ngModel)]="searchText"></ion-searchbar>
   <div class="scrolling-wrapper">
-    <ion-card id="basketball" (click) = "filterData('basketball')">
+    <ion-card id="basketball" (click)="filterData('basketball')">
       <ion-icon id="bask" name="basketball-outline"></ion-icon>
     </ion-card>
 
-    <ion-card id="football" (click) = "filterData('football')">
+    <ion-card id="football" (click)="filterData('football')">
       <ion-icon id="bask" name="american-football-outline"></ion-icon>
     </ion-card>
 
-    <ion-card id="soccer" (click) = "filterData('soccer')">
+    <ion-card id="soccer" (click)="filterData('soccer')">
       <ion-icon id="bask" name="football-outline"></ion-icon>
     </ion-card>
 
-    <ion-card id="baseball" (click) = "filterData('baseball')">
+    <ion-card id="baseball" (click)="filterData('baseball')">
       <ion-icon id="bask" name="baseball-outline"></ion-icon>
     </ion-card>
 
-    <ion-card id="volleyball" (click) = "filterData('volleyball')">
+    <ion-card id="volleyball" (click)="filterData('volleyball')">
     </ion-card>
   </div>
+
+  <div id="titleDiv">
+    <p id="topTitle"> Top Rated Athletes</p>
+
+    <ion-icon (click)="goo()" id="question" name="help"></ion-icon>
+  </div>
+
   <ion-card id="player" *ngFor=" let player of modifiedData | filter:searchText" (click)="go()">
     <ion-card-title id="playerName"> {{ player.name }}</ion-card-title>
     <img id = "profile" [src] = "player.image" />
 
   </ion-card>
-  
-  <ion-icon (click) = "goo()" id ="question" name="help"></ion-icon>
+
 
 </ion-content>

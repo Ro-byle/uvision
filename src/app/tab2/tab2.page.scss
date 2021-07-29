@@ -1,79 +1,78 @@
-ion-content{
+ion-content {
   --ion-background-color: black;
 }
-#title{
-  color:#7D82B8;
+#title {
+  color: #7d82b8;
   text-align: center;
   text-decoration: underline;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 56px;;
+  line-height: 56px;
 }
-#search{
+#search {
   --ion-background-color: white;
   position: relative;
   width: 361px;
   height: 48px;
   top: -300px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 5px solid #000000;
   box-sizing: border-box;
 }
 
-#basketball{
+#basketball {
   width: 97px;
   height: 84px;
-  position:relative;
-  top:120px;
-  left:5px;
+  position: relative;
+  top: 120px;
+  left: 5px;
   z-index: 1;
-  background: #FFFFFF;
-  border-radius: 8px;
-  
-}
-#football{
-  width: 97px;
-  height: 84px;
-  position:relative;
-  top:26px;
-  left:120px;
-  z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
-#soccer{
+#football {
   width: 97px;
   height: 84px;
-  position:relative;
-  top:-68.5px;
-  left:236px;
+  position: relative;
+  top: 26px;
+  left: 120px;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
-#baseball{
+#soccer {
   width: 97px;
   height: 84px;
-  position:relative;
+  position: relative;
+  top: -68.5px;
+  left: 236px;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 8px;
+}
+#baseball {
+  width: 97px;
+  height: 84px;
+  position: relative;
   top: -163px;
-  left:352px;
+  left: 352px;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
-#volleyball{
+#volleyball {
   width: 97px;
   height: 84px;
-  position:relative;
-  top:-258px;
-  left:465px;
+  position: relative;
+  top: -258px;
+  left: 465px;
   z-index: 1;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 8px;
 }
-#bask{
+#bask {
   position: relative;
   width: 60px;
   height: 60px;
@@ -81,26 +80,26 @@ ion-content{
   left: 20px;
 }
 
-ion-button{
+ion-button {
   width: 187px;
   height: 38px;
-  --background: #7D82B8;
+  --background: #7d82b8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  position:relative;
-  right:2px;
+  position: relative;
+  right: 2px;
 }
 
-#player{
+#player {
   position: relative;
-  width: 163px;
+  width: 140px;
   height: 199px;
-  left: 24px;
-  top: -500;
-  background: #C4C4C4;
+  margin-left: 8%;
+  float: left;
+  background: #c4c4c4;
   border-radius: 10px;
 }
-#playerName{
+#playerName {
   position: relative;
   width: 189px;
   height: 30px;
@@ -111,9 +110,9 @@ ion-button{
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
-  color: #231F20;
+  color: #231f20;
 }
-#likes{
+#likes {
   width: 200px;
   height: 47px;
   font-family: Arial;
@@ -122,11 +121,11 @@ ion-button{
   font-size: 18px;
   line-height: 28px;
   color: #000000;
-  position:relative;
+  position: relative;
   left: 20px;
-  top:50px;
+  top: 50px;
 }
-#followers{
+#followers {
   width: 500px;
   height: 47px;
   font-family: Arial;
@@ -135,17 +134,16 @@ ion-button{
   font-size: 18px;
   line-height: 28px;
   color: #000000;
-  position:relative;
+  position: relative;
   left: 120px;
-  bottom:-2.5px;
+  bottom: -2.5px;
 }
-#profile{
+#profile {
   // position: relative;
   width: fit-content;
   height: fit-content;
 }
-#searchbar
-{
+#searchbar {
   --ion-background-color: white;
   position: absolute;
   top: 122px;
@@ -154,6 +152,7 @@ ion-button{
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  margin-bottom: -62%;
 
   .card {
     display: inline-block;
@@ -177,11 +176,19 @@ ion-button{
   }
 }
 
-#question{
-  position:relative;
-  bottom: 1100px;
-  left: 430px;
-  background: #FFDA87;
-border: 1px solid #4F2DB2;
-box-sizing: border-box;
+#topTitle {
+  color: white;
+  margin-left: 9%;
+  position: absolute;
+}
+#question {
+  // position: relative;
+  margin-left: 81%;
+  background: #ffda87;
+  border: 1px solid #4f2db2;
+  box-sizing: border-box;
+}
+
+#titleDiv {
+  margin-bottom: 13%;
 }

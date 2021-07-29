@@ -8,16 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class QuestionComponent implements OnInit {
   constructor() {}
   hidden: String = 'a';
-  dropdown(thing, thing2) {
+  dropdown(thing) {
     if (this.hidden == 'a') {
       document.getElementById(thing).style.visibility = 'visible';
       this.hidden = 'b';
-    } else if (
-      this.hidden == 'b'
-    ) {
+    } else if (this.hidden == 'b') {
       document.getElementById(thing).style.visibility = 'hidden';
       this.hidden = 'a';
-    } 
+    }
   }
   ngOnInit() {}
 }
