@@ -22,7 +22,7 @@ ion-content{
   box-sizing: border-box;
 }
 
-#popupB{
+#basketball{
   width: 97px;
   height: 84px;
   position:relative;
@@ -33,7 +33,7 @@ ion-content{
   border-radius: 8px;
   
 }
-#popupF{
+#football{
   width: 97px;
   height: 84px;
   position:relative;
@@ -43,7 +43,7 @@ ion-content{
   background: #FFFFFF;
   border-radius: 8px;
 }
-#popupS{
+#soccer{
   width: 97px;
   height: 84px;
   position:relative;
@@ -53,7 +53,7 @@ ion-content{
   background: #FFFFFF;
   border-radius: 8px;
 }
-#popupBase{
+#baseball{
   width: 97px;
   height: 84px;
   position:relative;
@@ -63,7 +63,7 @@ ion-content{
   background: #FFFFFF;
   border-radius: 8px;
 }
-#popupV{
+#volleyball{
   width: 97px;
   height: 84px;
   position:relative;
@@ -175,4 +175,8 @@ ion-button{
   .card {
     flex: 0 0 auto;
   }
+}
+ion-button{
+  position:relative;
+  bottom: 1100px;
 }

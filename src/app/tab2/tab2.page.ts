@@ -58,5 +58,14 @@ export class Tab2Page {
    {sport:'baseball', icon: 'baseball-outline'}, 
    {sport:'volleyball', icon: 'baseball-outline'}
 ];
-
+  modifiedData = JSON.parse(JSON.stringify(this.players));
+  resetData(){
+   this.modifiedData = JSON.parse(JSON.stringify(this.players));
+  }
+  filterData(athletics){
+    this.resetData();
+    this.modifiedData = this.modifiedData.filter((player) => {
+      return player.Sport == athletics;
+    });
+  }
 }
