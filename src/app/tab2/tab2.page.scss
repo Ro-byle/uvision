@@ -176,7 +176,12 @@ ion-button{
     flex: 0 0 auto;
   }
 }
-ion-button{
+
+#question{
   position:relative;
   bottom: 1100px;
+  left: 430px;
+  background: #FFDA87;
+border: 1px solid #4F2DB2;
+box-sizing: border-box;
 }
