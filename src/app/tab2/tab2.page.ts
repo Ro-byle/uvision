@@ -11,6 +11,10 @@ export class Tab2Page {
   go(){
     this.router.navigate(['profilepage']);
   }
+  
+  goo(){
+    this.router.navigate(['question']);
+  }
   searchText;
   players = [
     {

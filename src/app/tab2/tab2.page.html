@@ -4,34 +4,36 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  
   <h1 id="title"> Athletes </h1>
 
   <ion-searchbar id="searchbar" [(ngModel)]="searchText"></ion-searchbar>
-  <div class="scrolling-wrapper">   
-     <ion-card id="popupB">
-      <ion-icon id = "bask" name="basketball-outline"></ion-icon>
+  <div class="scrolling-wrapper">
+    <ion-card id="popupB">
+      <ion-icon id="bask" name="basketball-outline"></ion-icon>
     </ion-card>
 
     <ion-card id="popupF">
-    <ion-icon id = "bask" name="american-football-outline"></ion-icon>
+      <ion-icon id="bask" name="american-football-outline"></ion-icon>
     </ion-card>
 
     <ion-card id="popupS">
-    <ion-icon id = "bask" name="football-outline"></ion-icon>
+      <ion-icon id="bask" name="football-outline"></ion-icon>
     </ion-card>
 
     <ion-card id="popupBase">
-    <ion-icon id = "bask" name="baseball-outline"></ion-icon>
+      <ion-icon id="bask" name="baseball-outline"></ion-icon>
     </ion-card>
 
     <ion-card id="popupV">
     </ion-card>
   </div>
-  <ion-card id="player" *ngFor=" let player of players | filter:searchText" (click) = "go()" >
+  <ion-card id="player" *ngFor=" let player of players | filter:searchText" (click)="go()">
     <ion-card-title id="playerName"> {{ player.name }}</ion-card-title>
     <img id = "profile" [src] = "player.image" />
 
   </ion-card>
-
+  <ion-button (click)='goo()'> Q&A </ion-button>
 
 </ion-content>

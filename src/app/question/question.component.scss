@@ -1,0 +1,237 @@
+ion-content {
+  --ion-background-color: #111d12;
+}
+#title {
+  position: absolute;
+  width: 95px;
+  height: 49px;
+  left: 144px;
+  top: 59px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 49px;
+  text-decoration-line: underline;
+
+  color: #ffda87;
+}
+#box1 {
+  position: relative;
+  width: 327px;
+  height: 60px;
+  left: 10px;
+  top: 150px;
+
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 15px;
+}
+
+#text {
+  position: relative;
+  width: 186px;
+  height: 40px;
+  left: 93px;
+  top: -10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #ffda87;
+}
+#plus {
+  position: relative;
+  top: -65px;
+  left: 280px;
+  width: 30px;
+  height: 30px;
+}
+#subtext {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+#subtext2 {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+#subtext3 {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+#subtext4 {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+#subtext5 {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+#subtext6 {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+#subtext7 {
+  width: 335px;
+  height: 85px;
+  position: relative;
+  left: 7px;
+  top: 150px;
+  visibility: hidden;
+  background: #ffda87;
+  border: 5px solid #4f2db2;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+#hiddentext {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+#hiddentext2 {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+#hiddentext3 {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+#hiddentext4 {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+#hiddentext5 {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+#hiddentext6 {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}
+#hiddentext7 {
+  width: 296px;
+  height: 65px;
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+}

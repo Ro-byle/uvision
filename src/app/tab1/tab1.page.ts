@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
   constructor() {}
-
+  
   filled: boolean = true;
   like(): void {
     this.filled = !this.filled;

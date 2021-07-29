@@ -13,9 +13,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
-  declarations: [AppComponent, PostsComponent, ProfilepageComponent],
+  declarations: [AppComponent, PostsComponent, ProfilepageComponent, QuestionComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,  AngularFireModule.initializeApp(environment.firebaseConfig),],
   providers: [
