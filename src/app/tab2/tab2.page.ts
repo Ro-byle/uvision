@@ -67,6 +67,7 @@ save: any = 'a';
     this.resetData();
     if(this.save == athletics){
       this.resetData();
+      this.save = "a";
     }
     else if(this.save != athletics){
       this.save = athletics;

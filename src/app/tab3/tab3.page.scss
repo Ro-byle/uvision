@@ -123,7 +123,7 @@ ion-content {
   position: absolute;
   width: 155px;
   height: 29px;
-  left: 135px;
+  left: 124px;
   top: 300px;
 
   font-family: Roboto;
@@ -137,7 +137,7 @@ ion-content {
   position: absolute;
   width: 393px;
   height: 29px;
-  left: 170px;
+  left: 60px;
   top: 330px;
   font-family: Roboto;
   font-style: normal;
@@ -287,4 +287,73 @@ border-radius: 14px;
   border-radius: 14px;
 }
 
+#topic{
+  
+position: absolute;
+width: 37px;
+height: 10px;
+left: 10px;
+top: 37px;
 
+font-family: Mute Semibold;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+#answer{
+  position: absolute;
+width: 72px;
+height: 22px;
+left: 10px;
+top: 57.53px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 19px;
+line-height: 22px;
+
+color: #000000;
+
+}
+#bold{
+  position: absolute;
+width: 47px;
+height: 22px;
+left: 30px;
+top: 20px;
+
+font-family: Hind;
+font-style: normal;
+font-weight: 600;
+font-size: 44px;
+line-height: 22px;
+/* identical to box height, or 50% */
+
+letter-spacing: -0.408px;
+
+color: #000000;
+
+}
+#smallBold{
+  position: absolute;
+width: 3000px;
+height: 22px;
+left: 9px;
+top: 64px;
+
+font-family: Hind;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 22px;
+/* identical to box height, or 147% */
+
+letter-spacing: -0.408px;
+
+color: #000000;
+
+}

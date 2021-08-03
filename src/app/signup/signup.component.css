@@ -23,7 +23,7 @@ color: #FFDA87;
   position: relative;
   width: 284px;
   height: 63px;
-  left: 27px;
+  left: 35px;
   top: 408px;
   
   border: 4px solid #4F2DB2;
@@ -46,4 +46,15 @@ line-height: 45px;
 color: #D3B472;
 
 opacity: 0.8;
+}
+#signup2{
+  position: relative;
+  width: 284px;
+  height: 63px;
+  left: 35px;
+  top: 438px;
+  
+  border: 4px solid #4F2DB2;
+  box-sizing: border-box;
+  border-radius: 80.5px;
 }
