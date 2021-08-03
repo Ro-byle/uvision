@@ -1,0 +1,183 @@
+ion-content {
+  --ion-background-color: rgba(0, 0, 0, 0.63);
+}
+#text {
+  width: 215px;
+  height: 29px;
+  position: absolute;
+  left: 99px;
+  top: 102px;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #ffda87;
+}
+#black {
+  position: absolute;
+  width: 614px;
+  height: 173px;
+  left: -50px;
+  top: 132px;
+
+  background: #000000;
+}
+#pfp{
+  width:127px;
+  height:127px;
+  border-radius: 50%;
+ position: relative;
+ left: 155px;
+ top: 25px;
+}
+#whiteLine{
+  position: absolute;
+width: 414px;
+height: 0px;
+left: 0px;
+top: 346px;
+
+background: #FFDA87;
+border: 1px solid #F9F9F9;
+}
+#header{
+  position: absolute;
+width: 135px;
+height: 18px;
+left: 17px;
+top: 362px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #FFDA87;
+
+}
+#description
+{
+position: relative;
+width: 71px;
+height: 18px;
+left: 91px;
+top: 403px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFDA87;
+
+}
+#infoBox{
+  position: relative;
+width: 231px;
+height: 32px;
+left: 72px;
+top: 384px;
+
+border: 3px solid #4F2DB2;
+box-sizing: border-box;
+border-radius: 5px;
+}
+#whiteLine2{
+  position: absolute;
+width: 414px;
+height: 0px;
+left: 0px;
+top: 966px;
+
+background: #FFDA87;
+border: 1px solid #F9F9F9;
+}
+#header2{
+    position: absolute;
+  width: 135px;
+  height: 18px;
+  left: 17px;
+  top: 982px;
+  
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+  
+  text-decoration-line: underline;
+  
+  color: #FFDA87;
+}
+#infoBox2{
+  position: relative;
+width: 231px;
+height: 32px;
+left: 72px;
+top: 423px;
+
+border: 3px solid #4F2DB2;
+box-sizing: border-box;
+border-radius: 5px;
+}
+#description2{
+position: relative;
+width: 300px;
+height: 18px;
+left: 91px;
+top: 443px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFDA87;
+
+}
+#login{
+  position: absolute;
+  width: 183px;
+  height: 39px;
+left: 85px;
+top: 1888px;
+
+border: 4px solid #4F2DB2;
+box-sizing: border-box;
+border-radius: 12px;
+
+
+}
+#loginText{
+  position: absolute;
+width: 64px;
+height: 31px;
+left: 60px;
+top: -20px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 31px;
+
+color: #FFDA87;
+
+}

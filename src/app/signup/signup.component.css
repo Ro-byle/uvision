@@ -1,0 +1,49 @@
+ion-content{
+  --ion-background-color: black;
+}
+#signupText{
+  position: absolute;
+width: 138px;
+height: 45px;
+left: 130px;
+top: 310px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 45px;
+text-decoration-line: underline;
+
+color: #FFDA87;
+
+
+}
+#signup{
+  position: relative;
+  width: 284px;
+  height: 63px;
+  left: 27px;
+  top: 408px;
+  
+  border: 4px solid #4F2DB2;
+  box-sizing: border-box;
+  border-radius: 80.5px;
+}
+#student{
+position: relative;
+width: 118px;
+height: 43px;
+left: 80px;
+top: -15px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 45px;
+
+color: #D3B472;
+
+opacity: 0.8;
+}

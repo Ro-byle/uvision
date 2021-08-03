@@ -13,7 +13,7 @@ export class Tab2Page {
   }
   
   goo(){
-    this.router.navigate(['question']);
+    this.router.navigate(['login']);
   }
   searchText;
   players = [

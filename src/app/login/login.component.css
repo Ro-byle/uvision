@@ -1,0 +1,101 @@
+ion-content{
+  --ion-background-color: black;
+}
+#username{
+  position: relative;
+width: 350px;
+height: 51px;
+left: 0px;
+top: 400px;
+
+border: 4px solid #4F2DB2;
+box-sizing: border-box;
+border-radius: 80.5px;
+}
+
+#icon{
+  position: relative;
+  left:10px;
+  top:2px;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+}
+#text{
+  left: 50px;
+  bottom: 35px;
+  font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+
+color: #FFDA87;
+}
+#random{
+  position: absolute;
+width: 231px;
+height: 19px;
+left: 54px;
+top: 548px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+
+color: #FFDA87;
+
+opacity: 0.9;
+
+}
+#underline{
+  position: absolute;
+width: 69px;
+height: 21px;
+left: 268px;
+top: 548px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 23px;
+text-decoration-line: underline;
+
+color: #FFDA87;
+
+
+}
+#login{
+  position: absolute;
+width: 284px;
+height: 63px;
+left: 27px;
+top: 638px;
+
+border: 4px solid #4F2DB2;
+box-sizing: border-box;
+border-radius: 80.5px;
+
+}
+#loginText{
+  position: absolute;
+width: 118px;
+height: 43px;
+left: 100px;
+top: -15px;
+
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 45px;
+
+color: #D3B472;
+
+opacity: 0.8;
+}

@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CommentComponent } from './comment/comment.component';
+import { LoginComponent } from './login/login.component';
+import { PinfoComponent } from './pinfo/pinfo.component';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { QuestionComponent } from './question/question.component';
+import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
   {
     path: '', 
@@ -20,6 +23,19 @@ const routes: Routes = [
     path: 'comment',
     component: CommentComponent
   },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'signup',
+    component: SignupComponent
+  },
+  {
+    path: 'pinfo',
+    component: PinfoComponent
+  },
+ 
 ];
 @NgModule({
   imports: [
