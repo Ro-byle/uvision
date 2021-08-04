@@ -1,5 +1,5 @@
 ion-content {
-  --ion-background-color: black;
+  --ion-background-color: rgba(0, 0, 0, 0.851);
 }
 #title {
   color: #7d82b8;
@@ -139,9 +139,7 @@ ion-button {
   bottom: -2.5px;
 }
 #profile {
-  // position: relative;
-  width: fit-content;
-  height: fit-content;
+  bottom: 40px;
 }
 #searchbar {
   --ion-background-color: white;
@@ -183,10 +181,14 @@ ion-button {
 }
 #question {
   // position: relative;
-  margin-left: 81%;
-  background: #ffda87;
-  border: 1px solid #4f2db2;
-  box-sizing: border-box;
+
+  width: 105px;
+  height: 27px; 
+  margin-left: 67%;
+  background: #FFDA87;
+  border: 2px solid #4F2DB2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
 }
 
 #titleDiv {

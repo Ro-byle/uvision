@@ -13,8 +13,9 @@ export class Tab2Page {
   }
   
   goo(){
-    this.router.navigate(['login']);
+    this.router.navigate(['question']);
   }
+  
   searchText;
   players = [
     {
@@ -46,7 +47,7 @@ export class Tab2Page {
       likes: '20',
       followers: '10',
       image:
-        'https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png',
+        'https://lh3.googleusercontent.com/M4BHVtr2v66T1hlLwcwK5kp1qsD69mnnUnuyaG_fbYT-5l8JTq9iaqyAO0Lt9OqyW8oi0zSJ0go5JnHemlJlu3h1b8sNvSusz-2oUn_qUGMPDkKp9JYVi7SK4We57O9m486rVZD41w=w2400',
         Sport: 'football'
     }
   ];

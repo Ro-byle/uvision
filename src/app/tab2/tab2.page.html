@@ -33,7 +33,7 @@
   <div id="titleDiv">
     <p id="topTitle"> Top Rated Athletes</p>
 
-    <ion-icon (click)="goo()" id="question" name="help"></ion-icon>
+    <ion-button (click)="goo()" id="question"> FAQS </ion-button>
   </div>
 
   <ion-card id="player" *ngFor=" let player of modifiedData | filter:searchText" (click)="go()">
@@ -41,6 +41,5 @@
     <img id = "profile" [src] = "player.image" />
 
   </ion-card>
-
 
 </ion-content>

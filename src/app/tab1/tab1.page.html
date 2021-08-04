@@ -10,12 +10,35 @@
     <ion-card-header>
       <img id = "profile" src ="https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png"
   />
-  <ion-button id = "scope" color="tertiary">Tertiary</ion-button>
-  <ion-card-subtitle id="profileName">Profile name</ion-card-subtitle>
+      <ion-card id="scope"(click) = "stats()">
+        <P id="scopeText"> Scope </P>
+      </ion-card>
+      <ion-card-subtitle id="profileName">Profile name</ion-card-subtitle>
     </ion-card-header>
 
     <img id = "post" src = "https://lh3.googleusercontent.com/OGySQEiHADgFF5B8G1jgNvP6pUfYYQ5W4iy8bOEhAxAJoOgXcWN3N1rgls1nnImXft6wGhidT188nyXKQCUHMNHndJxU-8PK1-Bh3WvhkwGNHxMhN-CT6JryehY_OBUDwZDD6hPZWw=w2400"
     />
+
+
+    <ion-icon id="heartIcon" (click)="goo()" [name]="filled ? 'heart-outline' : 'heart'"></ion-icon>
+
+    <ion-icon id="comment" name="chatbubble-outline"></ion-icon>
+
+  </ion-card>
+
+  <ion-card id="header">
+
+    <ion-card-header>
+      <img id = "profile" src ="https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png"
+/>
+      <ion-card id="scope" color="tertiary">
+        <P id="scopeText"> Scope </P>
+      </ion-card>
+      <ion-card-subtitle id="profileName">Profile name</ion-card-subtitle>
+    </ion-card-header>
+
+    <img id = "post" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2I2CcBtupK_6R4ia3UigNyet-fvaMsTRfTQClL3VcbDT1VunLiVvmvpIWUWn94TQPpE&usqp=CAU"
+  />
 
 
     <ion-icon id="heartIcon" (click)="like()" [name]="filled ? 'heart-outline' : 'heart'"></ion-icon>
@@ -26,37 +49,18 @@
 
   <ion-card id="header">
 
-  <ion-card-header>
-    <img id = "profile" src ="https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png"
+    <ion-card-header>
+      <img id = "profile" src ="https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png"
 />
-    <ion-card-subtitle id="profileName">Profile name</ion-card-subtitle>
-  </ion-card-header>
+      <ion-card-subtitle id="profileName">Profile name</ion-card-subtitle>
+    </ion-card-header>
 
-  <img id = "post" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2I2CcBtupK_6R4ia3UigNyet-fvaMsTRfTQClL3VcbDT1VunLiVvmvpIWUWn94TQPpE&usqp=CAU"
-  />
-
-
-  <ion-icon id="heartIcon" (click)="like()" [name]="filled ? 'heart-outline' : 'heart'"></ion-icon>
-
-  <ion-icon id="comment" name="chatbubble-outline"></ion-icon>
-
-</ion-card>
-
-<ion-card id="header">
-
-<ion-card-header>
-  <img id = "profile" src ="https://www.indieweek.com/wp-content/uploads/2019/08/profile-icon-300x300.png"
-/>
-  <ion-card-subtitle id="profileName">Profile name</ion-card-subtitle>
-</ion-card-header>
-
-<img id = "post" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2I2CcBtupK_6R4ia3UigNyet-fvaMsTRfTQClL3VcbDT1VunLiVvmvpIWUWn94TQPpE&usqp=CAU"
+    <img id = "post" src = " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp2I2CcBtupK_6R4ia3UigNyet-fvaMsTRfTQClL3VcbDT1VunLiVvmvpIWUWn94TQPpE&usqp=CAU"
 />
 
 
-<ion-icon id="heartIcon" (click)="like()" [name]="filled ? 'heart-outline' : 'heart'"></ion-icon>
+    <ion-icon id="heartIcon" (click)="like()" [name]="filled ? 'heart-outline' : 'heart'"></ion-icon>
 
-<ion-icon id="comment" (click)="go()" name="chatbubble-outline" ></ion-icon>
+    <ion-icon id="comment" (click)="go()" name="chatbubble-outline"></ion-icon>
 
-</ion-card>
-
+  </ion-card>

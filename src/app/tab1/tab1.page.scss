@@ -1,5 +1,5 @@
 ion-content {
-  --ion-background-color: black;
+  --ion-background-color: rgba(0, 0, 0, 0.851);
 }
 #profile {
   border-radius: 100%;
@@ -46,8 +46,23 @@ position: absolute;
 width: 95px;
 height: 34px;
 left: 260px;
-top: 60px;
+top: 30px;
 
 background: #4F2DB2;
 border-radius: 20px;
+}
+#scopeText{
+  position: absolute;
+width: 54px;
+height: 18.96px;
+left: 23px;
+top: -15px;
+
+font-family: Prompt;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+
+color: black;
 }

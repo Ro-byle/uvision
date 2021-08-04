@@ -2,7 +2,7 @@
   position: absolute;
   width: 156px;
   height: 156px;
-  left: 110px;
+  left: 20px;
   top: 175px;
   border-radius: 50%;
   background: url(image.png);
@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 ion-content {
-  --ion-background-color: black;
+  --ion-background-color: rgba(0, 0, 0, 0.851);
 }
 #banner {
   position: absolute;
@@ -355,5 +355,46 @@ line-height: 22px;
 letter-spacing: -0.408px;
 
 color: #000000;
+
+}
+#post{
+  position: relative;
+left: 20px;
+top: 710px;
+border-radius: 4px;
+padding-bottom: 40px;
+}
+#post2{
+  position: relative;
+left: 50px;
+top: 710px;
+border-radius: 4px;
+padding-bottom: 40px;
+}
+#edit{
+  position: absolute;
+  width: 162px;
+  height: 24px;
+  left: 170px;
+  top: 280px;
+  
+  background: #4F2DB2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#editText{
+position: absolute;
+width: 102px;
+height: 20px;
+bottom: -17px;
+left: 35px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+
 
 }

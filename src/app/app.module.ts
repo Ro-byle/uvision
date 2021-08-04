@@ -8,7 +8,6 @@ import { Camera } from '@ionic-native/camera/ngx';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
@@ -20,9 +19,23 @@ import { SignupComponent } from './signup/signup.component';
 import { PinfoComponent } from './pinfo/pinfo.component';
 
 @NgModule({
-  declarations: [AppComponent, PostsComponent, ProfilepageComponent, QuestionComponent, CommentComponent,LoginComponent, SignupComponent, PinfoComponent ],
+  declarations: [
+    AppComponent,
+    PostsComponent,
+    ProfilepageComponent,
+    QuestionComponent,
+    CommentComponent,
+    LoginComponent,
+    SignupComponent,
+    PinfoComponent
+  ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,  AngularFireModule.initializeApp(environment.firebaseConfig),],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
+  ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     Camera

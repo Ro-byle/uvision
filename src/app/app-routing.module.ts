@@ -8,7 +8,7 @@ import { QuestionComponent } from './question/question.component';
 import { SignupComponent } from './signup/signup.component';
 const routes: Routes = [
   {
-    path: '', 
+    path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
@@ -34,8 +34,7 @@ const routes: Routes = [
   {
     path: 'pinfo',
     component: PinfoComponent
-  },
- 
+  }
 ];
 @NgModule({
   imports: [

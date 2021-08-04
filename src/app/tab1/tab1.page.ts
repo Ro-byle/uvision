@@ -16,5 +16,22 @@ export class Tab1Page {
   go(){
       this.router.navigate(['comment']);
     };
+    
+    color: string = "purple"
+    goo(){
+      this.router.navigate(['login']);
+    }
+  stats(){
+    if(this.color == "purple")
+    {
+    document.getElementById("scope").style.background = "#ffda87";
+     this.color = "yellow"
+    }
+    else if(this.color == "yellow"){
+      document.getElementById("scope").style.background = "#4F2DB2";
+      this.color = "purple"
+    }
+  }  
   }
+  
 

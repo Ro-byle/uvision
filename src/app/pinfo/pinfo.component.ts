@@ -7,12 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./pinfo.component.css']
 })
 export class PinfoComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+  ngOnInit() {}
+  go() {
+    this.router.navigate(['tabs']);
   }
-  go(){
-    this.router.navigate(['/tabs/tab1']);
-  };
 }
