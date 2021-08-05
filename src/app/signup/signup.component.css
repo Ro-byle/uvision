@@ -58,3 +58,10 @@ opacity: 0.8;
   box-sizing: border-box;
   border-radius: 80.5px;
 }
+#logo{
+  width: 150px;
+  height: 225px;
+  left:100px;
+  bottom: 100px;
+  background: none;
+}

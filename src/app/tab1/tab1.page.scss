@@ -1,44 +1,52 @@
 ion-content {
-  --ion-background-color: rgba(0, 0, 0, 0.851);
+  --ion-background-color: white;
 }
 #profile {
   border-radius: 100%;
   height: 50px;
   width: 50px;
+  position: relative;
+  top:00px;
 }
 #header {
-  height: 550px;
+  height: 500px;
   width: 500px;
   position: relative;
   right: 20px;
+  bottom: 0px;
 }
 #profileName {
   color: white;
-  bottom: 40px;
+  bottom: 50px;
   left: 60px;
 }
 ion-card {
-  background-color: black;
+  background-color:rgba(0, 0, 0, 0.851);;
+  position:relative;
+  bottom:0px;
+  left:-12px;
+  margin: 0; display: inline-block
 }
 #post {
   width: fill-content;
   height: 350px;
   position: relative;
   left: 16.5px;
+  bottom: 80px;
 }
 #heartIcon {
   width: 50px;
   height: 50px;
   position: relative;
   right: 340px;
-  top: 50px;
+  top: -30px;
 }
 #comment {
   width: 45px;
   height: 45px;
   position: relative;
   right: 330px;
-  top: 45px;
+  top: -33px;
 }
 #scope{
   
@@ -46,7 +54,7 @@ position: absolute;
 width: 95px;
 height: 34px;
 left: 260px;
-top: 30px;
+top: 40px;
 
 background: #4F2DB2;
 border-radius: 20px;
@@ -65,4 +73,18 @@ font-size: 18px;
 line-height: 27px;
 
 color: black;
+}
+#postTitle{
+position: relative;
+width: 215px;
+height: 19px;
+left: 60px;
+top:-70px;
+font-family: Prompt;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+
+color: #FFFFFF;
 }

@@ -185,3 +185,10 @@ color: #FFDA87;
   position:relative;
   top:3px;
 }
+#logo{
+  width: 70px;
+  height: 105px;
+  left:140px;
+  bottom: 1170px;
+  background: none;
+}
