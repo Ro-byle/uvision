@@ -39,7 +39,7 @@ color: #FFDA87;
 width: 231px;
 height: 19px;
 left: 54px;
-top: 468px;
+top: 478px;
 
 font-family: Mulish;
 font-style: normal;
@@ -57,7 +57,7 @@ opacity: 0.9;
 width: 69px;
 height: 21px;
 left: 268px;
-top: 468px;
+top: 478px;
 
 font-family: Mulish;
 font-style: normal;
@@ -75,7 +75,7 @@ color: #FFDA87;
 width: 284px;
 height: 63px;
 left: 27px;
-top: 538px;
+top: 558px;
 
 border: 4px solid #4F2DB2;
 box-sizing: border-box;
@@ -107,8 +107,8 @@ opacity: 0.8;
 }
 #logo{
   width: 200px;
-  height: 300px;
+  height: 500px;
   left:70px;
-  bottom: 100px;
+  bottom: 150px;
   background: none;
 }

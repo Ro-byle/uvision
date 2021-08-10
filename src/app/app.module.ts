@@ -18,6 +18,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { PinfoComponent } from './pinfo/pinfo.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +39,7 @@ import { PinfoComponent } from './pinfo/pinfo.component';
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    Camera
+    Camera, 
   ],
   bootstrap: [AppComponent]
 })
